@@ -26,17 +26,17 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-const listItemHtml = images
+const ulContent = images
   .map(x => {
-    const listItemTag = document.createElement('li');
-    const imageTag = document.createElement('img');
+    const liTag = document.createElement('li');
+    const imgTag = document.createElement('img');
 
-    imageTag.setAttribute('src', `${x.url}`);
-    imageTag.setAttribute('alt', `${x.alt}`);
+    imgTag.setAttribute('src', `${x.url}`);
+    imgTag.setAttribute('alt', `${x.alt}`);
 
-    listItemTag.append(imageTag);
-    return listItemTag.outerHTML;
+    liTag.append(imgTag);
+    return liTag.outerHTML;
   })
   .join('\n\n');
 
-list.insertAdjacentHTML('afterbegin', listItemHtml);
+list.insertAdjacentHTML('afterbegin', ulContent);
