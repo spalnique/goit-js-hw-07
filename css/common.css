@@ -77,16 +77,32 @@ body {
 }
 
 .gallery li {
-  /* display: flex;
-  justify-content: center; */
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .gallery img {
   object-fit: cover;
   height: 100%;
-  /* top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%); */
+}
+
+#name-input {
+  width: 360px;
+  padding: 8px 0 8px 16px;
+  margin: 16px 0;
+}
+
+#name-input::placeholder {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.output-text {
+  display: block;
+  color: #2E2F42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
 }
