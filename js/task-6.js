@@ -8,19 +8,20 @@ const userInput = document.querySelector('#controls input');
 const createButton = document.querySelector('#controls [data-create]');
 const destroyButton = document.querySelector('#controls [data-destroy]');
 const divBoxes = document.querySelector('#boxes');
+const width = 30;
+const heigth = 30;
 
 userInput.setAttribute('type', 'text');
 divBoxes.style.visibility = 'hidden';
 
 function createBoxes(amount) {
-  amount = Number(userInput.value);
+  amount = userInput.value;
   if (amount >= 1 && amount <= 100) {
     const newBlocks = Array.from({ length: amount }, (_, i) => {
-      const width = 30;
-      const height = 30;
-      return `<div class="new-box" style="width: ${width + 10 * i}px; height: ${
-        height + 10 * i
-      }px; background-color: ${getRandomHexColor()}"></div>`;
+      return `<div class="new-box" style="width: ${width + 10 * i}px;
+                                          height: ${heigth + 10 * i}px;
+                                          background-color: ${getRandomHexColor()}">
+                                          </div>`;
     });
     divBoxes.insertAdjacentHTML('afterbegin', newBlocks.join('\n\n'));
     divBoxes.style.visibility = 'visible';
