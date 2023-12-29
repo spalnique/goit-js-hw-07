@@ -26,17 +26,8 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-const ulContent = images
-  .map(x => {
-    const liTag = document.createElement('li');
-    const imgTag = document.createElement('img');
-
-    imgTag.setAttribute('src', `${x.url}`);
-    imgTag.setAttribute('alt', `${x.alt}`);
-
-    liTag.append(imgTag);
-    return liTag.outerHTML;
-  })
+const listContent = images
+  .map(x => `<li><img src="${x.url} alt="${x.alt}"/></li>`)
   .join('\n\n');
 
-list.insertAdjacentHTML('afterbegin', ulContent);
+list.insertAdjacentHTML('afterbegin', listContent);
