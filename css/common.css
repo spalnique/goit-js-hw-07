@@ -202,3 +202,69 @@ body {
 .change-color:hover {
   background: #6C8CFF;
 }
+
+#controls {
+  margin: 0 auto 16px;
+  padding: 32px;
+  width: 486px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #F6F6FE;
+}
+
+#controls input {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+}
+
+#controls [data-create] {
+  padding: 8px 16px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  background: #4E75FF;
+}
+
+#controls [data-create]:hover {
+  background: #6C8CFF;
+}
+
+#controls [data-destroy] {
+  padding: 8px 16px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  background: #FF4E4E;
+}
+
+#controls [data-destroy]:hover {
+  background: #FF7070;
+}
+
+#boxes {
+  margin: 0 auto;
+  padding: 32px;
+  width: 486px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: #F6F6FE;
+}
