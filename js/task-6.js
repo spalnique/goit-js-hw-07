@@ -16,6 +16,7 @@ divBoxes.style.visibility = 'hidden';
 
 function createBoxes(amount) {
   amount = userInput.value;
+  divBoxes.innerHTML = '';
   if (amount >= 1 && amount <= 100) {
     const newBlocks = Array.from({ length: amount }, (_, i) => {
       return `<div class="new-box" style="width: ${width + 10 * i}px;
@@ -25,6 +26,7 @@ function createBoxes(amount) {
     });
     divBoxes.insertAdjacentHTML('afterbegin', newBlocks.join('\n\n'));
     divBoxes.style.visibility = 'visible';
+    userInput.value = '';
   } else {
     alert('Enter a value from 1 to 100!');
     userInput.value = '';
