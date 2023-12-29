@@ -26,7 +26,7 @@ function createBoxes(amount) {
     divBoxes.insertAdjacentHTML('afterbegin', newBlocks.join('\n\n'));
     divBoxes.style.visibility = 'visible';
   } else {
-    alert('Value should be from 1 to 100!');
+    alert('Enter a value from 1 to 100!');
     userInput.value = '';
   }
 }
