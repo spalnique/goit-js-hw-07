@@ -1,11 +1,11 @@
-const inputElement = document.querySelector('#name-input');
-const spanElement = document.querySelector('#name-output');
-const headerElement = document.querySelector('h1');
+const input = document.querySelector('#name-input');
+const span = document.querySelector('#name-output');
+const header = document.querySelector('h1');
 
-headerElement.classList.add('output-text');
+header.classList.add('output-text');
 
-inputElement.addEventListener('input', e =>
+input.addEventListener('input', e =>
   e.currentTarget.value.trim()
-    ? (spanElement.textContent = e.currentTarget.value.trim())
-    : (spanElement.textContent = 'Anonymous'),
+    ? (span.textContent = e.currentTarget.value.trim())
+    : (span.textContent = 'Anonymous'),
 );
