@@ -147,7 +147,7 @@ body {
 }
 
 .login-form button {
-align-self: flex-start;
+  align-self: flex-start;
   padding: 8px 16px;
   color: #FFF;
   font-size: 16px;
@@ -160,5 +160,45 @@ align-self: flex-start;
 }
 
 .login-form button:hover {
+  background: #6C8CFF;
+}
+
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.widget p {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.color {
+  color: #2E2F42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.change-color {
+  padding: 8px 16px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  background: #4E75FF;
+}
+
+.change-color:hover {
   background: #6C8CFF;
 }
