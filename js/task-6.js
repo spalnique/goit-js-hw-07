@@ -30,7 +30,6 @@ function createBoxes(amount) {
   }
 }
 
-
 createButton.addEventListener('click', createBoxes);
 
 destroyButton.addEventListener('click', e => {
