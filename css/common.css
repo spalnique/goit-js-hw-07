@@ -206,7 +206,6 @@ body {
 #controls {
   margin: 0 auto 16px;
   padding: 32px;
-  width: 486px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -260,8 +259,8 @@ body {
 #boxes {
   margin: 0 auto;
   padding: 32px;
-  width: 486px;
   display: flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   align-items: flex-start;
