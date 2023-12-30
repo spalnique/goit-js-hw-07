@@ -157,6 +157,7 @@ h1 {
   border: none;
   border-radius: 8px;
   background: #4E75FF;
+  cursor: pointer;
 }
 
 .login-form button:hover {
@@ -197,6 +198,7 @@ h1 {
   border: none;
   border-radius: 8px;
   background: #4E75FF;
+  cursor: pointer;
 }
 
 .change-color:hover {
@@ -253,6 +255,7 @@ input::-webkit-inner-spin-button {
   border: none;
   border-radius: 8px;
   background: #4E75FF;
+  cursor: pointer;
 }
 
 #controls [data-create]:hover {
@@ -269,6 +272,7 @@ input::-webkit-inner-spin-button {
   border: none;
   border-radius: 8px;
   background: #FF4E4E;
+  cursor: pointer;
 }
 
 #controls [data-destroy]:hover {
