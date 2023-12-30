@@ -10,28 +10,28 @@ function getRandomHexColor() {
 }
 
 function createBoxes() {
-  boxesContainer.textContent = '';
+  destroyBoxes();
   if (userInput.value >= 1 && userInput.value <= 100) {
     const newBlocks = Array.from({ length: userInput.value }, (_, i) => {
       return `<div class="new-box" style="width: ${30 + 10 * i}px;
                                           height: ${30 + 10 * i}px;
                                           background-color: ${getRandomHexColor()}">
-                                          </div>`;  
+                                          </div>`;
     });
     boxesContainer.insertAdjacentHTML('afterbegin', newBlocks.join('\n\n'));
     userInput.value = '';
   } else {
     alert('Enter a value from 1 to 100!');
-    boxesContainer.textContent = '';
-    userInput.value = '';
+    destroyBoxes();
   }
 }
 
-createButton.addEventListener('click', createBoxes);
-destroyButton.addEventListener('click', e => {
+function destroyBoxes() {
   boxesContainer.textContent = '';
-  userInput.value = '';
-});
+}
+
+createButton.addEventListener('click', createBoxes);
+destroyButton.addEventListener('click', destroyBoxes);
 userInput.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     createBoxes();
